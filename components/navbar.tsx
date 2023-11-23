@@ -33,10 +33,14 @@ export const Navbar = () => {
             name: 'Create Ticket',
             url: '/create-ticket'
         },
+        {
+            name: 'Dashboard',
+            url: '/dashboard'
+        },
     ]
 
     return (
-        <nav className="px-20 flex justify-between items-center py-3 mb-5">
+        <div className="px-20 flex justify-between items-center py-3 mb-5">
             <div className="w-28 h-16 relative">
                 <Link href={'/'}>
                     <Image
@@ -62,6 +66,6 @@ export const Navbar = () => {
                     </Link>
                 )}
             </div>
-        </nav>
+        </div>
     );
 };
